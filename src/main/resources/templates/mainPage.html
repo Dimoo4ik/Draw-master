@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+    <title>Draws</title>
+</head>
+<body id="body">
+<div class="container_for_form_entrance" id="container_for_form_entrance">
+    <form id="name_form_for_entrance">
+        <button class="close" onclick="close_form_registration()">Закрыть</button>
+        <div class="greetings">
+            <img src="assets/img/logotype.png" class="form_photo_logo">
+            <span class="greetings_words">Добро пожаловать в DREAM</span>
+        </div>
+        <label for="email">Адрес электронной почты:</label>
+        <input type="email" id="send_form_form_entrance_user" placeholder="Введите адрес эл. почты" name="send_form_form_entrance_user">
+        <label for="password">Пароль:</label>
+        <input type="password" class="password" placeholder="Введите пароль" name="password" id="password_entrance">
+        <label class="view_password"><input type="checkbox" class="view_password_input" onclick="view_password_entrance()">Показать пароль</label>
+        <label for="password">Повторите пароль:</label>
+        <input type="password" placeholder="Напишите пароль ещё раз">
+        <input formmethod="get" formaction="/pageCurrentUser" type="submit"
+               class="button_form_entrance_user" id="button_form_entrance_user" value="Войти">
+        <!--        <input type="submit" class="button_form_entrance_user" id="button_form_entrance_user" value="Войти">-->
+    </form>
+</div>
+<div class="container_for_form" id="container_for_form">
+    <form id="name_form_for_registration">
+        <button class="close" onclick="close_form_registration()">Закрыть</button>
+        <div class="greetings">
+            <img src="assets/img/logotype.png" class="form_photo_logo">
+            <span class="greetings_words">Добро пожаловать в DREAM</span>
+        </div>
+        <label for="email">Адрес электронной почты:</label>
+        <input type="email" id="email" placeholder="Введите адрес эл. почты" name="email">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" class="password" placeholder="Создайте пароль" name="password_reg">
+        <label class="view_password"><input type="checkbox" class="view_password_input" onclick="view_password()">Показать пароль</label>
+        <label for="password">Повторите пароль:</label>
+        <input type="password" id="password_for_repeat" placeholder="Напишите пароль ещё раз">
+<!--         <input formmethod="post" formaction="/addUser/" type="submit"-->
+<!--                class="button_form_registration_user" id="button_form_registration_user" value="Зарегистрироваться">-->
+        <input type="button" class="button_form_registration_user" id="button_form_registration_user" value="Зарегистрироваться">
+    </form>
+</div>
+<header>
+    <div class="one_level_top">
+        <img src="assets/img/logotype.png" class="photo_logo">
+        <div class="entrance_and_registration">
+            <button type="submit" class="button_entrance" onclick="openFormEntrance()">Войти</button>
+            <button type="submit" class="button_registration" onclick="openForm()">Регистрация</button>
+        </div>
+    </div>
+    <div class="two_level_top"></div>
+    <div class="text_for_winners">Победители этого дня</div>
+    <div class="three_level_top"></div>
+</header>
+
+<section>Розыгрыши
+    <div class="block_for_content_one">
+        <div class="one_string_draws">
+            <div class="one_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/photoDraw.jpg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>500 руб.
+                </div>
+            </div>
+            <div class="two_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/photoDraw.jpg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>500 руб.
+                </div>
+            </div>
+            <div class="three_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/photoDraw.jpg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>500 руб.
+                </div>
+            </div>
+            <div class="four_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/photoDraw.jpg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>500 руб.
+                </div>
+            </div>
+            <div class="five_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/photoDraw.jpg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>500 руб.
+                </div>
+            </div>
+        </div>
+        <div class="two_string_draws">
+            <div class="one_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentGreenBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>2500 руб.
+                </div>
+            </div>
+            <div class="two_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentGreenBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>2500 руб.
+                </div>
+            </div>
+            <div class="three_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentGreenBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>2500 руб.
+                </div>
+            </div>
+            <div class="four_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentGreenBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>2500 руб.
+                </div>
+            </div>
+            <div class="five_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentGreenBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>2500 руб.
+                </div>
+            </div>
+        </div>
+        <div class="three_string_draws">
+            <div class="one_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentBlueBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>5000 руб.
+                </div>
+            </div>
+            <div class="two_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentBlueBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>5000 руб.
+                </div>
+            </div>
+            <div class="three_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentBlueBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>5000 руб.
+                </div>
+            </div>
+            <div class="four_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentBlueBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>5000 руб.
+                </div>
+            </div>
+            <div class="five_block">
+                <div class="block_for_photo">
+                    <div class="border_for_photo">
+                        <img src="assets/img/presentBlueBackground.jpeg" class="photo_draw">
+                        <label class="text_for_loterey">Аукционная лотерея</label>
+                    </div>
+                </div>
+                <div class="block_for_button">
+                    <button value="button_to_participate" class="button_to_participate">Участвовать</button>5000 руб.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>О нас
+</footer>
+
+<link rel="stylesheet" type="text/css" href="css/cssMainPage.css">
+<script src="js/jquery.js"></script>
+<script src="js/jsMainPageDraw.js"></script>
+</body>
+</html>

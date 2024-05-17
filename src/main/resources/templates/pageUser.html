@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Draws</title>
+</head>
+<body>
+<header>
+    <div class="one_level_top">
+        <img src="assets/img/logotype.png" class="photo_logo">
+    </div>
+    <div class="two_level_top">
+        <div class="text_for_winners"></div>
+    </div>
+</header>
+
+<section>
+    <form class="block_photo">
+        <img th:src="${'/image/'+userId}" id="image_photo" class="imagePhoto" name="file_user">
+        <input id="load_photo" class="load_photo" name="file" type="file" accept="image/*">
+    </form>
+    <div class="fio_user_view"><span th:text="${fioUser}">Фамилия Имя Отчество</span></div>
+    <div class="data_user" id="data_user">
+        <div class="fio_user_and_data_birth" id="fio_user_and_data_birth">
+            <form>
+                <p class="text_personal_information">Личная информация</p>
+            </form>
+            <form>
+                <label>ФИО</label>
+            </form>
+            <form id="fio_user_id">
+                <textarea class="universal_style" rows="1" type="text" id="fio" placeholder="Иванов Иван Иванович" name="fioUser" th:text="${fioUser}">Иванов Иван Иванович></textarea>
+            </form>
+            <form>
+                <label>Дата рождения</label>
+            </form>
+            <form>
+                <textarea class="universal_style" rows="1" type="date" id="date" placeholder="01.01.1999" name="birthday" th:text="${birthday}">дд.мм.гг.></textarea>
+            </form>
+        </div>
+        <div class="email_and_number" id="email_and_number">
+            <form>
+                <p class="text_null">Средства связи</p>
+            </form>
+            <form>
+                <label>Адрес эл. почты</label>
+            </form>
+            <form>
+                <textarea class="universal_style" rows="1" type="email" placeholder="ivanov@mail.ru" name="updateEmail" id="updateEmail" th:text="${updateEmail}">university@skillbox.ru></textarea>
+            </form>
+            <form>
+                <label>Номер телефона</label>
+            </form>
+            <form id="emailData">
+                <textarea class="universal_style" rows="1" type="tel" placeholder="89674600924" name="phone" th:text="${phoneUser}">89674600924></textarea>
+            </form>
+        </div>
+        <div class="social_media">
+            <form>
+                <p class="text_social_media">Социальные сети</p>
+            </form>
+            <form>
+                <label type="text">Телеграмм</label>
+            </form>
+            <form>
+                <textarea class="universal_style" rows="1" type="url" placeholder="@ivanovDev" name="telegram" th:text="${telegram}"><input placeholder="Добавить"></textarea>
+            </form>
+            <form>
+                <label type="text">ВК</label>
+            </form>
+            <form>
+                <textarea class="universal_style" rows="1" type="url" placeholder="https://vk.com/id707033001" name="vk" th:text="${vk}"><input placeholder="Добавить"></textarea>
+            </form>
+
+        </div>
+        <div class="save">
+            <!--            <a href="/saveFioAndBirthday/"><button class="button_save" id="button_save">Сохранить</button></a>-->
+<!--            <input type="submit" class="button_save" id="button_save" value="Сохранить">-->
+                        <input formmethod="post" formaction="/updateInformationUser/" type="submit"
+                               class="button_save" id="button_save" value="Сохранить">
+        </div>
+    </div>
+</section>
+<footer>
+</footer>
+
+<link rel="stylesheet" type="text/css" href="css/cssPageUser.css">
+<script src="js/jquery.js"></script>
+<script src="js/jsMainPageDraw.js"></script>
+</body>
+</html>

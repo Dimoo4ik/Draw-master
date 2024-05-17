@@ -1,0 +1,264 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two_level_top, section, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff6ee;
+}
+
+.container_for_form_entrance {
+    position: fixed;
+    background-color: rgb(0 0 0 / 28%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container_for_form {
+    position: fixed;
+    background-color: rgb(0 0 0 / 28%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+form {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 20px;
+    background-color: #fff6ee;
+    border-radius: 10px;
+}
+
+.close {
+    transform: translate(194px, 0);
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_photo_logo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.greetings_words {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+input {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.password, .password_for_repeat {
+    margin-bottom: 0;
+}
+
+.view_password {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    font-size: 13px;
+}
+
+.button_form_entrance_user {
+    border: 0 solid transparent;
+    background-color: #6aa0ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.button_form_registration_user {
+    border: 0 solid transparent;
+    background-color: #6aa0ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.one_level_top {
+    height: 60px;
+    background-color: #ff7e04;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrance_and_registration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button_entrance {
+    height: 30px;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    background-color: #6aa0ff;
+    color: white;
+    cursor: pointer;
+}
+
+.button_registration {
+    height: 30px;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.two_level_top {
+    height: 40px;
+    background-color: #6aa0ff;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+}
+
+.text_for_winners {
+    height: 25px;
+    margin-left: 20px;
+    position: absolute;
+    top: 66px;
+    font-size: 25px;;
+}
+
+.three_level_top {
+    height: 80px;
+    border-bottom: 5px solid #6aa0ff;
+    opacity: 0.4;
+}
+
+section {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.block_for_content_one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.one_string_draws {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one_block, .two_block, .three_block, .four_block, .five_block {
+    width: 175px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 233, 236);
+    font-size: 15px;
+}
+
+.block_for_photo {
+    height: 80%;
+    width: 100%;
+}
+
+.border_for_photo {
+    width: 94%;
+    height: 75%;
+    border-top: 6px solid #ff7e04;
+    border-left: 6px solid #ff7e04;
+    border-right: 6px solid #ff7e04;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.photo_draw {
+    width: 100%;
+    height: 108%;
+    border-radius: 10px;
+}
+
+.text_for_loterey {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #cfcec1;
+}
+
+.block_for_button {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 5px;
+}
+
+.button_to_participate {
+    border: 3px solid #cfcec1;
+    padding: 5px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.two_string_draws {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.three_string_draws {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+footer {
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    height: 200px;
+    background-color: #000c22;
+}
+
+.account<
